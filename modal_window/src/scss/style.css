@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.modal-window__form-input, .modal-window__form-select {
+  margin-top: 10px;
+  width: 380px;
+  height: 35px;
+  border: 1px solid;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+}
+.modal-window__form-input:hover, .modal-window__form-select:hover {
+  border: 2px solid #98d7a0;
+}
+
+.modal-window {
+  margin: 100px auto;
+  width: 435px;
+  height: 420px;
+  border: 1px solid;
+  border-radius: 7px;
+}
+.modal-window__content {
+  margin: 30px auto;
+  width: 380px;
+  height: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.modal-window__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.modal-window__title::after {
+  content: "";
+  background-image: url("../img/close_icon.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 368px;
+  top: -12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.modal-window__form-select {
+  display: flex;
+}
+.modal-window__form-input {
+  padding-left: 10px;
+}
+.modal-window__form-input_select {
+  width: 360px;
+  border: none;
+  padding-left: 8px;
+}
+.modal-window span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+.modal-window__form-buttons {
+  display: flex;
+  justify-content: end;
+  margin-top: 44px;
+  text-align: center;
+}
+.modal-window__form-cancel {
+  margin-right: 5px;
+  background-color: #fff;
+  padding: 7px 13px;
+  border: 1.5px solid;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.modal-window__form-create {
+  background-color: black;
+  color: #fff;
+  padding: 7px 13px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

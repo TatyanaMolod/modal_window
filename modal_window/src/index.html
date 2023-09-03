@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+  <div class="modal-window">
+    <div class="modal-window__content">
+        <h2 class="modal-window__title">Create Export</h2>
+        <form class="modal-window__forms" action="">
+            <div class="modal-window__forms-container">
+
+                <div class="modal-window__form">
+                    <span>Export Name</span>
+                    <input class="modal-window__form-input" type="text" value="my_vol2">
+                </div>
+
+                <div class="modal-window__form">
+                   <span>Volume Name</span>
+                   <div class="modal-window__form-select">
+                       <select class="modal-window__form-input_select" name="export" id="export-select">
+                          <option value="iscsi">iscsi</option>
+                       </select>
+                    </div>
+                </div>
+
+                <div class="modal-window__form">
+                    <span>Protocol</span>
+                    <div class="modal-window__form-select">
+                      <select class="modal-window__form-input_select" name="protocol" id="protocol-select">
+                        <option value="tcp">tcp</option>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="modal-window__form-buttons">
+                    <button class="modal-window__form-cancel">Cancel</button>
+                    <button class="modal-window__form-create">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
